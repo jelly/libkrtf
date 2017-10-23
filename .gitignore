@@ -1,0 +1,4 @@
+*.so
+*.swp
+# Example test binary
+example
