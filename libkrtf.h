@@ -5,8 +5,8 @@
 
 namespace krtf {
 
-	bool ishtml(const std::string);
-	bool istext(const std::string);
+	bool ishtml(const std::string&);
+	bool istext(const std::string&);
 
 }
 
