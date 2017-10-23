@@ -16,10 +16,8 @@ int main()
 	std::getline(file, rtf, (char) file.eof());
 	std::cout << rtf << std::endl;
 	
-	if (krtf::istext(rtf)) {
-		std::cout << "it was text" << std::endl;
-	}
-	std::cout << krtf::istext(rtf) << std::endl;
+	std::cout << "text: " << krtf::istext(rtf) << std::endl;
+	std::cout << "html: " << krtf::ishtml(rtf) << std::endl;
 	
 	return 0;
 }
