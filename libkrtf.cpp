@@ -6,12 +6,12 @@ namespace krtf {
 
 bool ishtml(const std::string& rtf)
 {
-	return rtf.find("\\fromhtml") != 0;
+	return rtf.find("\\fromhtml") != std::string::npos;
 }
 	
 bool istext(const std::string& rtf)
 {
-	return rtf.find("\\fromtext") != 0;
+	return rtf.find("\\fromtext") != std::string::npos;
 }
 
 } // namespace krtf
