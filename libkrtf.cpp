@@ -4,10 +4,9 @@
 
 namespace krtf {
 
-bool isthtml(const std::string& rtf)
+bool ishtml(const std::string& rtf)
 {
 	return rtf.find("\\fromhtml") != 0;
-	
 }
 	
 bool istext(const std::string& rtf)
