@@ -16,8 +16,7 @@ example: example.cpp $(LIB)
 	$(CXX) $(CXXFLAGS) -L. -l$(TARGET) -o $@ $<
 
 run: example
-	LD_LIBRARY_PATH=. ./main
-
+	LD_LIBRARY_PATH=. ./$<
 
 clean:
 	$(RM) $(LIB)
