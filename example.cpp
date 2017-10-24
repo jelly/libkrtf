@@ -7,7 +7,7 @@
 int main()
 {
 	std::string rtf;
-	std::ifstream file("samples/plain.rtf");
+	std::ifstream file("samples/text.rtf");
 	if (!file.is_open()) {
 		std::cout << "File not found" << std::endl;
 	}
@@ -19,5 +19,7 @@ int main()
 	std::cout << "text: " << krtf::istext(rtf) << std::endl;
 	std::cout << "html: " << krtf::ishtml(rtf) << std::endl;
 	
+	// should be: "this is my text"
+	std::cout << "body: " << krtf::bodyfromtext(rtf) << std::endl;
 	return 0;
 }

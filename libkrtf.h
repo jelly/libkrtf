@@ -7,6 +7,7 @@ namespace krtf {
 
 	bool ishtml(const std::string&);
 	bool istext(const std::string&);
+	std::string bodyfromtext(const std::string&);
 
 }
 

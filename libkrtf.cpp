@@ -14,4 +14,9 @@ bool istext(const std::string& rtf)
 	return rtf.find("\\fromtext") != std::string::npos;
 }
 
+std::string bodyfromtext(const std::string& rtf)
+{
+	return "";
+}
+
 } // namespace krtf
